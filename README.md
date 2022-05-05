@@ -4,13 +4,21 @@ Packer configuration file to create AWS Ami with java 11 and confluent enterpris
 # Instructions
 
 * Install packer
-* Clone this repostitory
+* Clone this repository
 * Configure AWS to point to your desired region
+* Initialize packer
+
+        packer init
 * Run 
 
-        packer build -var 'ami_name_prefix=confluent-base' template.json
+        packer build aws-bootcamp.pkr.hcl
     
 * If successful, the script will return with the AMI Id you can use in your terraform scripts
 
 Build takes around 15 min
+
+# Hint 
+
+You can ignore the warnings and error messages with respect to `apt` and `debconf` 
+
 
