@@ -14,11 +14,3 @@ sudo apt install -y confluent-security
 
 # some other useful tools
 sudo DEBIAN_FRONTEND=noninteractive apt install -y krb5-user
-
-# drop in confluent archive at the correct location for offline installs
-
-sudo mkdir -p /opt/confluent
-cd /opt/confluent
-sudo curl -O http://packages.confluent.io/archive/7.1/confluent-7.1.1.tar.gz
-sudo tar xvf confluent-7.1.1.tar.gz
-sudo rm confluent-7.1.1.tar.gz
