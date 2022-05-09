@@ -27,7 +27,7 @@ data "amazon-ami" "ubuntu-image" {
 source "amazon-ebs" "bootcamp" {
   ami_name      = "bootcamp-CP-${var.cp-version}-${local.timestamp}"
   instance_type = "t2.micro"
-  region        = "${var.region}"
+  region        = var.region
   source_ami    = "${data.amazon-ami.ubuntu-image.id}"
   ssh_username  = "ubuntu"
 
