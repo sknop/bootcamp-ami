@@ -11,7 +11,7 @@ Packer configuration file to create AWS Ami with java 11 and confluent enterpris
           packer init aws-bootcamp.pkr.hcl
 * Run 
 
-        packer build aws-bootcamp.pkr.hcl
+        packer build .
     
 * If successful, the script will return with the AMI Id you can use in your terraform scripts
 

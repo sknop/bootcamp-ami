@@ -21,7 +21,7 @@ data "amazon-ami" "ubuntu-image" {
   }
   most_recent = true
   owners      = ["099720109477"]
-  region      = "${var.region}"
+  region      = var.region
 }
 
 source "amazon-ebs" "bootcamp" {
