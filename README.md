@@ -5,7 +5,7 @@ Packer configuration file to create AWS Ami with java 11 and confluent enterpris
 
 * Install packer
 * Clone this repository
-* Configure AWS to point to your desired region
+* Configure AWS to point to your desired region (in variables.auto.pkrvars.hcl)
 * Initialize packer
 
           packer init aws-bootcamp.pkr.hcl
