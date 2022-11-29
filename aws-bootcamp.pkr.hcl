@@ -1,7 +1,7 @@
 packer {
   required_plugins {
     amazon = {
-      version = ">= 1.0.9"
+      version = ">= 1.1.15"
       source  = "github.com/hashicorp/amazon"
     }
   }
@@ -26,7 +26,7 @@ data "amazon-ami" "ubuntu-image" {
 
 source "amazon-ebs" "bootcamp" {
   ami_name      = "bootcamp-CP-${var.cp-version}-${local.timestamp}"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   region        = var.region
   source_ami    = "${data.amazon-ami.ubuntu-image.id}"
   ssh_username  = "ubuntu"
