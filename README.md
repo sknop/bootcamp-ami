@@ -1,5 +1,5 @@
-# confluent-ami-creator
-Packer configuration file to create AWS Ami with java 11 and confluent enterprise installed based on Ubuntu 20.04
+# bootcamp-ami
+Packer configuration file to create AWS Ami with java 17 and Confluent CP Enterprise installed based on Ubuntu 20.04
 
 # Instructions
 
@@ -17,6 +17,8 @@ Packer configuration file to create AWS Ami with java 11 and confluent enterpris
 * If successful, the script will return with the AMI Id you can use in your terraform scripts
 
 Build takes around 15 min
+
+The AMI name can also be found in the generated manifeset.json file under builds.artifact_id.
 
 # Hint 
 
