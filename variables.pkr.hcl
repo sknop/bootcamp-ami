@@ -10,5 +10,5 @@ variable "region" {
 
 variable "cp-version" {
   type = string
-  default = "7.1"
+  default = "7.3"
 }

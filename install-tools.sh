@@ -4,7 +4,7 @@ set -e
 version=$1
 
 # Use apt-get instead of apt to avoid the warning about apt not having a stable CLI
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-11-jdk
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-17-jdk
 
 echo "Installing CP version ${version}"
 
