@@ -30,6 +30,9 @@ source "amazon-ebs" "bootcamp" {
   region        = var.region
   source_ami    = "${data.amazon-ami.ubuntu-image.id}"
   ssh_username  = "ubuntu"
+  # If you do not have a default VPC and subnet, you can hardcode them here
+  #  vpc_id        = "vpc-054059f7559b6f110"
+  #  subnet_id     = "subnet-007008728fed45f02"
 
   ami_block_device_mappings {
     delete_on_termination = true
