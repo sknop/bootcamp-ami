@@ -5,6 +5,7 @@ Packer configuration file to create AWS Ami with java 17 and Confluent CP Enterp
 
 * Install packer
 * Clone this repository
+* Copy variables.auto.pkrvars.hcl.template to variables.auto.pkrvars.hcl
 * Configure AWS to point to your desired region (in variables.auto.pkrvars.hcl)
 * Initialize packer
 
