@@ -21,8 +21,21 @@ Build takes around 15 min
 
 The AMI name can also be found in the generated manifeset.json file under builds.artifact_id.
 
-# Hint 
+# Hints
 
 You can ignore the warnings and error messages with respect to `apt` and `debconf` 
 
+Occasionally, Packer will fail to create the AMI because the default VPC in AWS 
+is either not available or not correctly configured. In this case, modify the script 
+
+    aws-bootcamp.pkr.hcl 
+
+You will find these lines in the file.
+
+    # If you do not have a default VPC and subnet, you can hardcode them here
+    #  vpc_id        = "vpc-054059f7559b6f110"
+    #  subnet_id     = "subnet-007008728fed45f02"
+
+Replace the vpc_id and (public) subnet_id with values from the VPC you created via 
+bootcamp-vpc.
 
