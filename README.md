@@ -23,7 +23,9 @@ The AMI name can also be found in the generated manifeset.json file under builds
 
 # Hints
 
-You can ignore the warnings and error messages with respect to `apt` and `debconf` 
+You can ignore the warnings and error messages with respect to `apt` and `debconf`.
+
+The region needs to match the region chosen for bootcamp-vpc.
 
 Occasionally, Packer will fail to create the AMI because the default VPC in AWS 
 is either not available or not correctly configured. In this case, modify the script 
