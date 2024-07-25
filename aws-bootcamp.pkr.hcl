@@ -44,7 +44,7 @@ source "amazon-ebs" "bootcamp" {
     device_name           = "/dev/sda1"
     volume_size           = 20
   }
-  tags {
+  tags = {
     OS_VERSION = "ubuntu"
     CP_VERSION = var.cp-version
     OWNER_NAME = var.owner_name
