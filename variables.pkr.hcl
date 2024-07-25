@@ -12,3 +12,13 @@ variable "cp-version" {
   type = string
   default = "7.3"
 }
+
+variable "owner_name" {
+  type = string
+  default = ""
+}
+
+variable "owner_email" {
+  type = string
+  default = ""
+}
