@@ -45,10 +45,10 @@ source "amazon-ebs" "bootcamp" {
     volume_size           = 20
   }
   tags = {
-    OS_VERSION = "ubuntu"
-    CP_VERSION = var.cp-version
-    OWNER_NAME = var.owner_name
-    OWNER_EMAIL = var.owner_email
+    os_version = "ubuntu"
+    cp_version = var.cp-version
+    owner_name = var.owner_name
+    owner_email = var.owner_email
   }
 }
 
