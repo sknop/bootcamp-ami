@@ -14,8 +14,8 @@ locals {
 data "amazon-ami" "ubuntu-image" {
   filters = {
     architecture                       = "x86_64"
-    "block-device-mapping.volume-type" = "gp2"
-    name                               = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"
+    "block-device-mapping.volume-type" = "gp3"
+    name                               = "ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"
     root-device-type                   = "ebs"
     virtualization-type                = "hvm"
   }

@@ -1,4 +1,4 @@
 region = "eu-west-1"
-cp-version = "7.6"
+cp-version = "7.9"
 owner_name = "Sven Erik Knop"
 owner_email = "sven@confluent.io"
