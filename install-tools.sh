@@ -33,4 +33,4 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y confluent-security
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y krb5-user
 
 # Remove the sources again, it interferes with the cp-ansible setup
-rm /etc/apt/sources.list.d/confluent-platform.sources
+sudo rm /etc/apt/sources.list.d/confluent-platform.sources
