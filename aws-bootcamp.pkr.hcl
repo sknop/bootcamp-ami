@@ -24,6 +24,10 @@ data "amazon-ami" "ubuntu-image" {
   region      = var.region
 }
 
+locals {
+  keep_until = formatdate("YYYY-MM-DD", timeadd(timestamp(),"24h"))
+}
+
 source "amazon-ebs" "bootcamp" {
   ami_name      = "bootcamp-CP-${var.cp-version}-${local.timestamp}"
   instance_type = "t3.micro"  # t2.micro not available for ap-south-2
@@ -49,6 +53,12 @@ source "amazon-ebs" "bootcamp" {
     cp_version = var.cp-version
     owner_name = var.owner_name
     owner_email = var.owner_email
+    cflt_partition = var.cflt_partition
+    cflt_managed_by	= var.cflt_managed_by
+    cflt_managed_id	= var.cflt_managed_id
+    cflt_service      = var.cflt_service
+    cflt_environment  = var.cflt_environment
+    cflt_keep_until   = local.keep_until
   }
 }
 

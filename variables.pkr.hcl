@@ -22,3 +22,25 @@ variable "owner_email" {
   type = string
   default = ""
 }
+
+variable "cflt_environment" {
+  default = "devel"
+}
+
+variable "cflt_partition" {
+  default = "onprem"
+}
+
+variable "cflt_managed_by" {
+  default = "user"
+}
+
+variable "cflt_managed_id" {
+  default = "sven"
+}
+
+variable "cflt_service" {
+  description = "This is the theatre of operation, like EMEA or APAC"
+  type = string
+  default = "CTG"
+}
