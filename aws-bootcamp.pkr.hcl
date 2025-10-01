@@ -60,7 +60,7 @@ source "amazon-ebs" "bootcamp" {
     cflt_environment  = var.cflt_environment
     cflt_keep_until   = local.keep_until
   }
-  volume_tags = {
+  run_volume_tags = {
     cflt_partition = var.cflt_partition
     cflt_managed_by	= var.cflt_managed_by
     cflt_managed_id	= var.cflt_managed_id
