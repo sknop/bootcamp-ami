@@ -1,5 +1,5 @@
 region = "eu-west-1"
-cp-version = "8.0"
+cp-version = "8.1"
 owner_name = "Sven Erik Knop"
 owner_email = "sven@confluent.io"
 cflt_environment = "devel"
